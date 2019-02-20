@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form name="myForm">
+            <table align="center";>
+                <tr>
+                <td colspan="4"><strong> Calculator </strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" size="12" name="myLine" value="0"></td>
+                    <td class='operators'><input type="button" value="Ｃ" onclick="myC()"></td>
+                </tr>
+                <tr>
+                    <td class='numbers'><input type="button" value=" ７ " onclick="myValue(7)"></td>
+                    <td class='numbers'><input type="button" value=" ８ " onclick="myValue(8)"></td>
+                    <td class='numbers'><input type="button" value=" ９ " onclick="myValue(9)"></td>
+                    <td class='operators'><input type="button" value=" ÷ " onclick="myCalculate('/')"></td>
+                </tr>
+                <tr>
+                    <td class='numbers'><input type="button" value=" ４ " onclick="myValue(4)"></td>
+                    <td class='numbers'><input type="button" value=" ５ " onclick="myValue(5)"></td>
+                    <td class='numbers'><input type="button" value=" ６ " onclick="myValue(6)"></td>
+                    <td class='operators'><input type="button" value=" × " onclick="myCalculate('*')"></td>
+                </tr>
+                <tr>
+                    <td class='numbers'><input type="button" value=" １ " onclick="myValue(1)"></td>
+                    <td class='numbers'><input type="button" value=" ２ " onclick="myValue(2)"></td>
+                    <td class='numbers'><input type="button" value=" ３ " onclick="myValue(3)"></td>
+                    <td class='operators'><input type="button" value=" - " onclick="myCalculate('-')"></td>
+                </tr>
+                <tr>
+                    <td class='numbers'><input type="button" value=" ０ " onclick="myValue(0)"></td>
+                    <td class='numbers'><input type="button" value=" ・ " onclick="myValue('.')"></td>
+                    <td class='operators'><input type="button" value=" = " onclick="myCalculate('=')"></td>
+                    <td class='operators'><input type="button" value=" + " onclick="myCalculate('+')"></td>
+                </tr>
+            </table>
+        </form>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
